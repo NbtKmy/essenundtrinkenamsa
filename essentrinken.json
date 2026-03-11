@@ -20,7 +20,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [8.555238, 47.373412]
+        "coordinates": [8.552160, 47.373348]
       },
       "properties": {
         "Name": "Avec",
@@ -35,7 +35,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [8.549646, 47.373565]
+        "coordinates": [8.552889564859901, 47.37350029675782]
       },
       "properties": {
         "Name": "ApoTheke",
@@ -65,7 +65,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [8.547783, 47.370122]
+        "coordinates": [8.549138002532924, 47.37014140729753]
       },
       "properties": {
         "Name": "Santa Lucia Teatro",
@@ -95,7 +95,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [8.546746, 47.372592]
+        "coordinates": [8.54778, 47.3726]
       },
       "properties": {
         "Name": "Restaurant Chiffon",
@@ -125,7 +125,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [8.547842, 47.378563]
+        "coordinates": [8.547978, 47.3786239]
       },
       "properties": {
         "Name": "Domino's Pizza Uni",

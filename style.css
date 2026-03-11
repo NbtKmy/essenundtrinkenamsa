@@ -305,6 +305,44 @@ header {
   }
 }
 
+/* ── Route hint tooltip ── */
+.route-hint {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 0.95rem;
+  color: #999;
+  cursor: default;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.route-hint::after {
+  content: attr(aria-label);
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 6px);
+  transform: none;
+  background: #2c3e50;
+  color: #fff;
+  font-size: 0.75rem;
+  white-space: normal;
+  width: 180px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 10;
+}
+
+.route-hint:hover::after,
+.route-hint.show::after {
+  opacity: 1;
+}
+
 /* ── Custom marker ── */
 .custom-marker {
   border-radius: 50%;

@@ -106,6 +106,14 @@ document.getElementById('sidebar-toggle').addEventListener('click', () => {
   document.getElementById('sidebar').classList.toggle('open');
 });
 
+// ── Route hint tooltip (tap on mobile) ───────────────────────────────────
+document.querySelector('.route-hint').addEventListener('click', function () {
+  this.classList.toggle('show');
+  if (this.classList.contains('show')) {
+    setTimeout(() => this.classList.remove('show'), 3000);
+  }
+});
+
 // ── Routing state ─────────────────────────────────────────────────────────
 let userLocation = null;
 let userMarker = null;
@@ -160,14 +168,15 @@ async function showRoute(destLatlng) {
   const { lat: dLat, lng: dLng } = destLatlng;
   const url =
     `https://router.project-osrm.org/route/v1/foot/` +
-    `${sLng},${sLat};${dLng},${dLat}?overview=full&geometries=geojson`;
+    `${sLng},${sLat};${dLng},${dLat}?overview=full&geometries=geojson&alternatives=true`;
 
   try {
     const res = await fetch(url);
     const data = await res.json();
     if (data.code !== 'Ok' || !data.routes.length) return;
 
-    const route = data.routes[0];
+    // 最短距離のルートを選択
+    const route = data.routes.reduce((best, r) => r.distance < best.distance ? r : best, data.routes[0]);
 
     if (routeLayer) routeLayer.remove();
     routeLayer = L.geoJSON(route.geometry, {
@@ -178,7 +187,9 @@ async function showRoute(destLatlng) {
     const distStr = distM >= 1000
       ? `${(distM / 1000).toFixed(1)} km`
       : `${Math.round(distM)} m`;
-    const minStr = `${Math.round(route.duration / 60)} Min.`;
+    // 徒歩速度 80 m/分（約 4.8 km/h）で計算
+    const walkMin = Math.round(distM / 80);
+    const minStr = walkMin < 1 ? '< 1 Min.' : `${walkMin} Min.`;
 
     document.getElementById('route-distance').textContent = `🚶 ${distStr}`;
     document.getElementById('route-duration').textContent = `(${minStr})`;
