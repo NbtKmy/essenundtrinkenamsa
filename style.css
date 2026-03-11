@@ -244,6 +244,67 @@ header {
   margin-bottom: 6px;
 }
 
+/* ── Sidebar toggle (mobile only) ── */
+.toggle-pill {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+/* ── Responsive (mobile) ── */
+@media (max-width: 640px) {
+  #app {
+    position: relative;
+    overflow: visible;
+  }
+
+  #map {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  #sidebar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    min-width: unset;
+    height: 58vh;
+    border-right: none;
+    border-top: 1px solid #ddd;
+    border-radius: 14px 14px 0 0;
+    box-shadow: 0 -3px 16px rgba(0, 0, 0, 0.18);
+    z-index: 1000;
+    transform: translateY(calc(100% - 40px));
+    transition: transform 0.3s ease;
+  }
+
+  #sidebar.open {
+    transform: translateY(0);
+  }
+
+  #sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    background: #fff;
+    border: none;
+    border-radius: 14px 14px 0 0;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+}
+
 /* ── Custom marker ── */
 .custom-marker {
   border-radius: 50%;

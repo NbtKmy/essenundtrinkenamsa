@@ -87,6 +87,10 @@ function buildListItem(feature, marker) {
     marker.openPopup();
     setActive(div);
     showRoute(latlng);
+    // Auf Mobilgeräten Sidebar schließen und Karte zeigen
+    if (window.matchMedia('(max-width: 640px)').matches) {
+      document.getElementById('sidebar').classList.remove('open');
+    }
   });
   return div;
 }
@@ -96,6 +100,11 @@ let allMarkers = [];
 let activeFilter = 'all';
 let searchQuery = '';
 let activeItem = null;
+
+// ── Mobile sidebar toggle ─────────────────────────────────────────────────
+document.getElementById('sidebar-toggle').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.toggle('open');
+});
 
 // ── Routing state ─────────────────────────────────────────────────────────
 let userLocation = null;
