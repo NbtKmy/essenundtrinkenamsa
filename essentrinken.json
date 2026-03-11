@@ -1,0 +1,140 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.549241, 47.370357]
+      },
+      "properties": {
+        "Name": "Spar Express (Schauspielhaus)",
+        "Adresse": "Hottingerstrasse 2",
+        "Gehdistanz": "474m (6 min)",
+        "Öffnungszeiten_Sa": "6:00-22:00 Uhr",
+        "Notiz": "Option Tram 8 oder 9 (Kantonsschule -> Kunsthaus)",
+        "Type": "Einkauf, Supermarkt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.555238, 47.373412]
+      },
+      "properties": {
+        "Name": "Avec",
+        "Adresse": "Freiestrasse 14",
+        "Gehdistanz": "358m (5 min)",
+        "Öffnungszeiten_Sa": "6:00-20:00 Uhr",
+        "Notiz": "",
+        "Type": "Einkauf, Supermarkt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.549646, 47.373565]
+      },
+      "properties": {
+        "Name": "ApoTheke",
+        "Adresse": "Zürichbergstrasse 17",
+        "Gehdistanz": "388m (6 min)",
+        "Öffnungszeiten_Sa": "9:00-16:00 Uhr",
+        "Notiz": "",
+        "Type": "Zum sitzen, Café"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.548487, 47.370776]
+      },
+      "properties": {
+        "Name": "Kunsthausbar",
+        "Adresse": "Heimplatz 5",
+        "Gehdistanz": "485m (6 min)",
+        "Öffnungszeiten_Sa": "9:00-21:00 Uhr",
+        "Notiz": "Option Tram 8 oder 9 (Kantonsschule -> Kunsthaus)",
+        "Type": "Zum sitzen, Café, Bar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.547783, 47.370122]
+      },
+      "properties": {
+        "Name": "Santa Lucia Teatro",
+        "Adresse": "Rämistrasse 32",
+        "Gehdistanz": "510m (6 min)",
+        "Öffnungszeiten_Sa": "11:30-14:00, 17:30-23:00 Uhr",
+        "Notiz": "Option Tram 8 oder 9 (Kantonsschule -> Kunsthaus)",
+        "Type": "Zum sitzen, Restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.548443, 47.370492]
+      },
+      "properties": {
+        "Name": "Kunsthaus Cafeteria",
+        "Adresse": "Heimpl. 1, 8001 Zürich",
+        "Gehdistanz": "479m (6 min)",
+        "Öffnungszeiten_Sa": "10:00-18:00",
+        "Notiz": "",
+        "Type": "Zum sitzen, Café"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.546746, 47.372592]
+      },
+      "properties": {
+        "Name": "Restaurant Chiffon",
+        "Adresse": "Hirschengraben 36, 8001 Zürich",
+        "Gehdistanz": "450m (6min)",
+        "Öffnungszeiten_Sa": "11:30-15:00, 18:00-23:00",
+        "Notiz": "",
+        "Type": "Zum sitzen, Restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.548234, 47.370825]
+      },
+      "properties": {
+        "Name": "Bei Moudi am Kunsthaus",
+        "Adresse": "Heimpl. 1, 8001 Zürich",
+        "Gehdistanz": "479m (6 min)",
+        "Öffnungszeiten_Sa": "10:00-23:00",
+        "Notiz": "",
+        "Type": "Zum sitzen, Restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.547842, 47.378563]
+      },
+      "properties": {
+        "Name": "Domino's Pizza Uni",
+        "Adresse": "Universitätstrasse 11, 8006 Zürich",
+        "Gehdistanz": "500m (6min)",
+        "Öffnungszeiten_Sa": "11:00-22:00",
+        "Notiz": "",
+        "Type": "Zum sitzen, Restaurant"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essen und Trinken – Wiki&Play</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>Essen und Trinken – Wiki&Play</header>
+
+<div id="app">
+  <div id="sidebar">
+    <div id="search-panel">
+      <input type="text" id="search-input" placeholder="Name, Adresse oder Typ suchen…" />
+      <div id="filter-buttons">
+        <button class="filter-btn active" data-type="all">Alle</button>
+      </div>
+    </div>
+    <div id="locate-bar">
+      <button id="locate-btn">Standort ermitteln</button>
+      <div id="route-info" hidden>
+        <span id="route-distance"></span>
+        <span id="route-duration"></span>
+        <button id="route-clear">✕</button>
+      </div>
+    </div>
+    <div id="result-count"></div>
+    <div id="result-list"></div>
+  </div>
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map.js"></script>
+</body>
+</html>
