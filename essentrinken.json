@@ -65,7 +65,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [8.549138002532924, 47.37014140729753]
+        "coordinates": [8.549172418618172, 47.37045271560166]
       },
       "properties": {
         "Name": "Santa Lucia Teatro",
@@ -95,7 +95,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [8.54778, 47.3726]
+        "coordinates": [8.547804096528614, 47.37274465405956]
       },
       "properties": {
         "Name": "Restaurant Chiffon",

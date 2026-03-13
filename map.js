@@ -166,17 +166,17 @@ async function showRoute(destLatlng) {
 
   const { lat: sLat, lng: sLng } = userLocation;
   const { lat: dLat, lng: dLng } = destLatlng;
+
   const url =
     `https://router.project-osrm.org/route/v1/foot/` +
-    `${sLng},${sLat};${dLng},${dLat}?overview=full&geometries=geojson&alternatives=true`;
+    `${sLng},${sLat};${dLng},${dLat}?overview=full&geometries=geojson`;
 
   try {
     const res = await fetch(url);
     const data = await res.json();
     if (data.code !== 'Ok' || !data.routes.length) return;
 
-    // 最短距離のルートを選択
-    const route = data.routes.reduce((best, r) => r.distance < best.distance ? r : best, data.routes[0]);
+    const route = data.routes[0];
 
     if (routeLayer) routeLayer.remove();
     routeLayer = L.geoJSON(route.geometry, {
